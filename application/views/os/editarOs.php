@@ -17,11 +17,13 @@
                 </span>
                 <h5>Editar Ordem de Serviço</h5>
                 <div class="buttons">
+                <?php if ($this->permission->checkPermission($this->session->userdata('permissao'), 'aCobranca')) : ?>
                     <?php if ($result->faturado == 0) { ?>
                         <a href="#modal-faturar" id="btn-faturar" role="button" data-toggle="modal" class="button btn btn-mini btn-danger">
-                            <span class="button__icon"><i class='bx bx-dollar'></i></span> <span class="button__text">Faturar</span></a>
-                    <?php
-                    } ?>
+                            <span class="button__icon"><i class='bx bx-dollar'></i></span> <span class="button__text">Faturar</span>
+                        </a>
+                    <?php } ?>
+                <?php endif ?>
                     <a title="Visualizar OS" class="button btn btn-primary" href="<?php echo site_url() ?>/os/visualizar/<?php echo $result->idOs; ?>">
                         <span class="button__icon"><i class="bx bx-show"></i></span><span class="button__text">Visualizar OS</span></a>
                     <a target="_blank" title="Imprimir OS Papel A4" class="button btn btn-mini btn-inverse" href="<?php echo site_url() ?>/os/imprimir/<?php echo $result->idOs; ?>">
