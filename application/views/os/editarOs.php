@@ -17,7 +17,7 @@
                 </span>
                 <h5>Editar Ordem de Serviço</h5>
                 <div class="buttons">
-                <?php if ($this->permission->checkPermission($this->session->userdata('permissao'), 'aCobranca')) : ?>
+                <?php if ($this->permission->checkPermission($this->session->userdata('permissao'), 'aFaturar')) : ?>
                     <?php if ($result->faturado == 0) { ?>
                         <a href="#modal-faturar" id="btn-faturar" role="button" data-toggle="modal" class="button btn btn-mini btn-danger">
                             <span class="button__icon"><i class='bx bx-dollar'></i></span> <span class="button__text">Faturar</span>

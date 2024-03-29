@@ -280,6 +280,12 @@
                                                     <span class="lbl"> Excluir Cobranças</span>
                                                 </label>
                                             </td>
+                                            <td>
+                                                <label>
+                                                    <input name="aFaturar" class="marcar" type="checkbox" value="1" />
+                                                    <span class="lbl">Faturar</span>
+                                                </label>
+                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>

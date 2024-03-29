@@ -123,6 +123,7 @@ class Permissoes extends MY_Controller
                 'eCobranca' => $this->input->post('eCobranca'),
                 'dCobranca' => $this->input->post('dCobranca'),
                 'vCobranca' => $this->input->post('vCobranca'),
+                'aFaturar' => $this->input->post('aFaturar'), 
             ];
             $permissoes = serialize($permissoes);
 
@@ -223,6 +224,7 @@ class Permissoes extends MY_Controller
                 'eCobranca' => $this->input->post('eCobranca'),
                 'dCobranca' => $this->input->post('dCobranca'),
                 'vCobranca' => $this->input->post('vCobranca'),
+                'aFaturar' => $this->input->post('aFaturar'), 
 
             ];
             $permissoes = serialize($permissoes);

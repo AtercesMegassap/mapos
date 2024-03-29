@@ -498,6 +498,16 @@
                                             <span class="lbl"> Excluir Cobranças</span>
                                         </label>
                                     </td>
+                                    <td>
+                                        <label>
+                                            <input <?php if (isset($permissoes['aFaturar'])) {
+                                                    if ($permissoes['aFaturar'] == '1') {
+                                                        echo 'checked';
+                                                    }
+                                                }?> name="aFaturar" class="marcar" type="checkbox" value="1" />
+                                            <span class="lbl">Faturar</span>
+                                        </label>
+                                    </td>
                                 </tr>
                             </table>
                         </div>
